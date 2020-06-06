@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    >
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="openGallery"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_weight="1"
+        android:onClick="convertoGray"
+        android:text="Process" />
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         android:layout_above="@+id/footer"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+<!--    <org.opencv.android.JavaCameraView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/HelloOpenCvView"-->
+<!--            app:show_fps="true"-->
+<!--        opencv:camera_id="back"-->
+<!--       />-->
+
+
+</RelativeLayout>
