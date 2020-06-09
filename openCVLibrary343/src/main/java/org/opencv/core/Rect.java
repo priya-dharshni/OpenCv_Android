@@ -12,7 +12,7 @@ public class Rect {
         this.height = height;
     }
 
-    public Rect() {
+    public Rect(double x, double y, double v, double v1) {
         this(0, 0, 0, 0);
     }
 

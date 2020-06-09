@@ -19,6 +19,9 @@ public class MatOfPoint extends Mat {
         //FIXME: do we need release() here?
     }
 
+    public MatOfPoint(Rect rect) {
+    }
+
     public static MatOfPoint fromNativeAddr(long addr) {
         return new MatOfPoint(addr);
     }
